@@ -1,23 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Formatting Names</title>
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevada Elections 2024</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- names.html -->
-    <form action="" method="post" id="calcForm">
-        <fieldset>
-			<div><label for="firstName">First Name</label><input type="text" name="firstName" id="firstName" required></div>
-			<div><label for="lastName">Last Name</label><input type="text" name="lastName" id="lastName" required></div>
-			<div><label for="result">Formatted Name</label><input type="text" name="result" id="result"></div>
-			<div><input type="submit" value="Submit" id="submit"></div>
-        </fieldset>
-    </form>
-    <script src="js/names.js"></script>
+    <header>
+        <h1>Nevada Election Information 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="#candidates">Candidates</a></li>
+                <li><a href="#questions">Ballot Questions</a></li>
+                <li><a href="#resources">Voter Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="candidates">
+            <h2>Candidates</h2>
+            <p>Information about candidates running for various offices in Nevada, including state and county positions.</p>
+            <div id="candidate-list">
+                <!-- Dynamic content populated by JavaScript -->
+            </div>
+        </section>
+
+        <section id="questions">
+            <h2>Ballot Questions</h2>
+            <p>Learn about the state and county ballot measures up for vote.</p>
+            <div id="question-list">
+                <!-- Dynamic content populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nevada Election Info. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
